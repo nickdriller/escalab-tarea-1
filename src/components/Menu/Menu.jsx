@@ -1,21 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './menu.sass'
 
 const Menu = () => (
   <nav className="menu">
     <ul className="menu__group">
       <li className="menu__item">
-        <a href="https://www.google.cl">Link1</a>
+        <Link to='/'>Home</Link>
       </li>
       <li className="menu__item">
-        <a href="https://www.google.cl">Link2</a>
+        <Link to='/category'>Categoría</Link>
       </li>
       <li className="menu__item">
-        <a href="https://www.google.cl">Link3</a>
+        <Link to='/subcategory'>Subcategoría</Link>
       </li>
-      <li className="menu__item">
-        <a href="https://www.google.cl">Link4</a>
-      </li>
+      
     </ul>
   </nav>
 )
