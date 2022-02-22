@@ -12,7 +12,7 @@ const Menu = () => (
         <Link to='/category'>Categoría</Link>
       </li>
       <li className="menu__item">
-        <Link to='/subcategory'>Subcategoría</Link>
+        <Link to='/products'>Subcategoría</Link>
       </li>
       
     </ul>

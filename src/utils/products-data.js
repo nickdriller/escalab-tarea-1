@@ -241,3 +241,5 @@ const PRODUCT_DATA =
       }
     }
   ]
+
+export default PRODUCT_DATA
