@@ -1,8 +1,6 @@
 import React from 'react'
-import Card from '../../components/Card/Card'
+import Product from '../../components/Product/Product'
 import PRODUCT_DATA from '../../utils/products-data'
-
-
 
 class HomePage extends React.Component{
   constructor(props){
@@ -21,7 +19,7 @@ class HomePage extends React.Component{
       <div className="container">
         {data
           .map( ({id, ...otherDataProps}) => (
-            <Card key={id} productId={id} {...otherDataProps} />
+            <Product key={id} productId={id} {...otherDataProps} />
             )
           )
         }

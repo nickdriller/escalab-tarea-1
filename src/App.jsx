@@ -9,13 +9,12 @@ import CategoryPage from './pages/category/CategoryPage'
 import SubcategoryPage from './pages/subcategory/SubcategoryPage'
 import DetailPage from './pages/detail/DetailPage'
 
-
-
 const App = () => {
   
   return (
     <>
       <Header />
+
       <Switch>
         <Route exact path='/' component={HomePage}/>
         <Route path='/category' component={CategoryPage}/>
