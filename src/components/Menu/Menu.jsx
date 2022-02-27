@@ -14,6 +14,9 @@ const Menu = () => (
       <li className="menu__item">
         <Link to='/products'>Subcategoría</Link>
       </li>
+      <li className="menu__item">
+        <Link to='/signinup'>Inicio Sesión / Registro</Link>
+      </li>
       
     </ul>
   </nav>
