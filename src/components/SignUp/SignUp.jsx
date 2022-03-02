@@ -52,6 +52,7 @@ class SignInUp extends React.Component{
     const {displayName, email, password, confirmPassword} = this.state
     return(
       <form className="formulario" onSubmit={this.handleSubmit}>
+        <h2 className="formulario__titulo">Sign Up Bitch!</h2>
         <div className="formulario__item">
           <label className="formulario__etiqueta">Nickname</label>
           <input className="formulario__entrada" value={displayName} name="displayName" onChange={this.handleChange} />

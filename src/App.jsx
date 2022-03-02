@@ -6,12 +6,13 @@ import PRODUCT_DATA from './utils/products-data'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 
-import HomePage from './pages/homepage/HomePage'
 import CategoryPage from './pages/category/CategoryPage'
 import SubcategoryPage from './pages/subcategory/SubcategoryPage'
 import DetailPage from './pages/detail/DetailPage'
+import LogInPage from './pages/LogInPage/LogInPage'
+import SignUpPage from './pages/SignUpPage/SignUpPage'
 import Product from './components/Product/Product'
-import SignInUp from './components/SignInUp/SignInUp'
+
 
 class App extends React.Component{
   constructor(props){
@@ -44,7 +45,8 @@ class App extends React.Component{
           <Route exact path='/products/:productId'> 
             <DetailPage data={data} />
           </Route>
-          <Route path='/signinup' component={SignInUp} />
+          <Route path='/login' component={LogInPage} />
+          <Route path='/signup' component={SignUpPage} />
         </Switch>
         
         <Footer/>

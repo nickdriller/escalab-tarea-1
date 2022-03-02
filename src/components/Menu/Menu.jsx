@@ -40,7 +40,10 @@ class Menu extends React.Component{
             <Link to='/products'>Subcategoría</Link>
           </li>
           <li className="menu__item">
-            <Link to='/signinup'>Inicio Sesión / Registro</Link>
+            <Link to='/login'>Inicio Sesión</Link>
+          </li>
+          <li className="menu__item">
+            <Link to='/signup'>Registro</Link>
           </li>
           <li className="menu__item menu__item--login">
             {!this.user ? 'Usuario Anonimo' : <button onClick={this.handleSignOut}>Sign out</button>}   
