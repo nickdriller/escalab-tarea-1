@@ -32,8 +32,15 @@ class SignInUp extends React.Component{
       return
     }
     try{
-      const user = await createUserWithEmailAndPassword(auth, email, password, {displayName} )
-      console.log(user)
+      const user = await createUserWithEmailAndPassword(auth, email, password, displayName )
+      console.log('user', user)
+      
+      this.setState({
+        displayName: '',
+        email: '',
+        password: '',
+        confirmPassword: ''
+      })
     } catch(error) {
       console.log(error.message)
 
