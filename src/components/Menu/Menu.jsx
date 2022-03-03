@@ -46,7 +46,7 @@ class Menu extends React.Component{
             <Link to='/signup'>Registro</Link>
           </li>
           <li className="menu__item menu__item--login">
-            {!this.user ? 'Usuario Anonimo' : <button onClick={this.handleSignOut}>Sign out</button>}   
+            {!this.user ? 'Usuario Anonimo' : <button onClick={this.handleSignOut}>{this.user.displayName}Sign out</button>}   
           </li>
 
           
