@@ -2,6 +2,7 @@ import React from 'react'
 import { auth } from '../../utils/firebase-config'
 import { GoogleSignIn } from '../../utils/firebase-config'
 import { signInWithEmailAndPassword } from 'firebase/auth'
+import './login.sass'
 
 
 class LogIn extends React.Component {
@@ -33,7 +34,6 @@ class LogIn extends React.Component {
         email: '',
         password: ''
       })
-      console.log(user)
     }
     catch(error){
       console.log(error.message)
@@ -46,7 +46,7 @@ class LogIn extends React.Component {
     return(
       <>
         <form className="formulario" onSubmit={this.handleFormSubmit}>
-          <h2 className="formulario__titulo">Login you fuckin' fuck</h2>
+          <h2 className="formulario__titulo">Inicia sesión</h2>
           <div className="formulario__item">
             <label className="formulario__etiqueta">Correo electrónico</label>
             <input type="email" className="formulario__entrada" name="email" value={this.state.email} onChange={this.handleInputChanges} />
@@ -60,15 +60,14 @@ class LogIn extends React.Component {
               <span className="boton__texto">Iniciar sesión</span>
             </button>
           </div>
+
+          <hr />
+
+          <button className="boton boton--rrss" onClick={GoogleSignIn}>
+            <span className="boton__icono"></span>
+            <span className="boton__texto">Inicia sesión con Google</span>
+          </button>
         </form>
-
-        <hr />
-
-        <button className="boton" onClick={GoogleSignIn}>
-          <span className="boton__icono"></span>
-          <span className="boton__texto">Inicia sesión con Google</span>
-        </button>
-
       </>
     )
   }

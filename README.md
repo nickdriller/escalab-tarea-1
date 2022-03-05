@@ -1,8 +1,8 @@
 # Curso React.js - Generación 9
 
 ## Tarea 01
-Fecha de inicio: Lunes 14 de Febrero.  
-Fecha de entrega: Lunes 28 de Febrero hasta las 00:00.
+Fecha de inicio: lunes 14 de febrero.  
+Fecha de entrega: lunes 28 de febrero hasta las 00:00. (extensión viernes 4 marzo)
   
 ## Objetivos
 1. Crear un archivo `.js` donde dejen data de prueba para utilizar.
@@ -14,4 +14,10 @@ Fecha de entrega: Lunes 28 de Febrero hasta las 00:00.
 7. Manejar algunos temas de ciclos de vida desde componentes de clases  
 `this.state` - `this.setState`
 8. Para lo que es estilo pueden ocupar lo que a ustedes les acomode 
+
+## Dudas durante el desarrollo de la tarea
+1. Cómo importar una tipografía desde Google Fonts a un proyecto de React
+2. Cómo pasar props a través de Routes? Se puede? 
+3. En React Router existe una forma de identificar el link que está activo?
+4. Cómo redirigir hacia otra página? Por ejemplo al momento en que un usuario inició sesión rediriga al Home
 

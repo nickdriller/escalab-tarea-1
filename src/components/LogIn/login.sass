@@ -1,0 +1,40 @@
+.formulario
+  max-width: 500px
+  margin: auto
+  padding: 40px
+  border: 1px solid #DADADA
+
+  hr
+    margin: 30px 0
+    border: 0
+    border-bottom: 1px solid #DADADA
+
+.formulario__titulo
+  margin: 0 0 50px
+  text-align: center
+  color: #595959
+
+.formulario__item
+  & + &
+    margin-top: 20px
+
+.formulario__etiqueta
+  display: block
+  font-size: .75rem
+  text-transform: uppercase
+  color: #595959
+
+.formulario__entrada
+  height: 42px
+  padding: 6px 20px
+  border: 1px solid #DADADA
+  width: 100%
+  color: #595959
+  transition: border ease-in-out .25s
+  &:focus
+    outline: 0
+    border-color: rgb(5, 145, 149)
+
+.formulario__accion
+  margin-top: 40px
+  

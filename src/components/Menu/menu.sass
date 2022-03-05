@@ -1,4 +1,23 @@
-.menu__group
-  list-style-type: none
-  padding-left: 0
+.menu
   display: flex
+  justify-content: space-around
+  padding: 20px 30px
+
+.menu__grupo
+  list-style-type: none
+  display: flex
+  flex: 1
+  &--izquierda
+    justify-content: flex-end
+
+.menu__link
+  display: block
+  padding: 10px
+  font-size: .85rem
+  text-transform: uppercase
+  color: rgb(5, 145, 149)
+
+.menu__logo
+  flex: 1
+  display: flex
+  justify-content: center

@@ -1,0 +1,62 @@
+.productos
+  max-width: 1920px
+  margin: auto
+  display: flex
+  flex-wrap: wrap
+
+.producto
+  flex-basis: 100%
+  padding: 20px
+  @media screen and ( min-width: 768px )
+    flex-basis: 50%
+  @media screen and ( min-width: 992px )
+    flex-basis: 33.33336%
+  @media screen and ( min-width: 1440px )
+    flex-basis: 25%
+
+.producto__contenido
+  padding: 20px
+  border: 1px solid #dadada
+  height: 100%
+  display: flex
+  flex-direction: column
+
+.producto__imagen
+  position: relative
+  
+.producto__etiqueta
+  position: absolute
+  right: 0
+  padding: 6px
+  background: rgb(5, 145, 149)
+  font-size: .25rem
+  color: #FFFFFF
+  text-transform: uppercase
+
+.producto__informacion
+  margin-top: auto
+
+.producto__nombre
+  font-size: .875rem
+  font-weight: 400
+  color: #595959
+
+
+.producto__precio
+  font-weight: 700
+  color: rgb(5, 145, 149)
+
+.producto__accion
+  display: block
+  margin-top: 6px
+  padding: 10px
+  border: 1px solid rgb(5, 145, 149)
+  text-align: center
+  color: rgb(5, 145, 149)
+  transition: background ease-in-out .25s
+  font-size: .75rem
+  &:hover
+    background: rgb(5, 145, 149)
+    color: #FFFFFF
+
+

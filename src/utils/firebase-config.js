@@ -1,9 +1,8 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app'
 import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
+import { BrowserRouter } from 'react-router-dom';
 
-
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCVGc5VCBS3PV4yb-Oxc7En3RDfAXoo0gc",
   authDomain: "tarea01-31fa2.firebaseapp.com",
@@ -20,9 +19,6 @@ export const auth = getAuth(app)
 
 const googleProvider = new GoogleAuthProvider()
 
-export const GoogleSignIn = () => {
-  signInWithPopup(auth, googleProvider)
-    .then( result => console.log(result))
-    .catch( error => console.log(error.message)
-  )
+export const GoogleSignIn = async () => {
+  await signInWithPopup(auth, googleProvider)
 }
